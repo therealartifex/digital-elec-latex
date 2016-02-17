@@ -1,8 +1,25 @@
 \center
-\Large{Truth Table}
+\Large{\bf Truth Table}\\[4cm]
+\begin{table}[h]
+\centering
+\begin{tabular}{cccc|c|cccc}
+$A$   & $B$   & $C$   & $D$   &  & $Q_1$ & $Q_2$ & $R_1$ & $R_2$ \\
+0     & 0     & 0     & 0     &  & 0     & 0     & 0     & 0     \\
+0     & 0     & 0     & 1     &  & 0     & 0     & 0     & 1     \\
+0     & 0     & 1     & 0     &  & 0     & 0     & 1     & 0     \\
+0     & 0     & 1     & 1     &  & 0     & 1     & 0     & 0     \\
+0     & 1     & 0     & 0     &  & 0     & 1     & 0     & 1     \\
+0     & 1     & 0     & 1     &  & 0     & 1     & 1     & 0     \\
+0     & 1     & 1     & 0     &  & 1     & 0     & 0     & 0     \\
+0     & 1     & 1     & 1     &  & 1     & 0     & 0     & 1     \\
+1     & 0     & 0     & 0     &  & 1     & 0     & 1     & 0     \\
+1     & 0     & 0     & 1     &  & 1     & 1     & 0     & 0     \\
+\multicolumn{4}{c}{1010-1111} &  & \multicolumn{4}{c}{DC}
+\end{tabular}
+\end{table}
 \newpage
 \center
-\Large{Karnaugh Maps}\\[4cm]
+\Large{\bf Karnaugh Maps}\\[4cm]
 \begin{minipage}{0.45\textwidth}
 	\begin{flushleft} \Large{$Q_1 = A+BC$}\\
 	    \large
