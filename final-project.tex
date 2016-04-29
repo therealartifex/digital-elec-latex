@@ -14,7 +14,7 @@ If there are cars waiting in the E-W turn lane for longer than 15 seconds, the N
 The E-W signal will then cycle green~$\rightarrow$~yellow~$\rightarrow$~red, after which the N-S signal turns green and will stay green for at least 30 seconds.
 
 \section{Logic Design}
-asdf
+
 
 \section{Circuit Diagram}
 \subsection{Bill of Materials}
@@ -37,7 +37,16 @@ Arduino Uno Board & 1 & EA \\ \hline
 \includegraphics[scale=0.50]{0623151841.jpg}
 
 \section{Prototype Construction and Testing}
-\subsection{Construction Process}
 \subsection{Testing Process}
+Before we could begin testing, several things had to be put in place. Before we could connect anything, the CPLD had to be programmed.
+Next, the stoplight assemblies had to be built and connected to the correct pins on the CPLD.
+Then we needed to have the Arduino programmed, and wired to both the sensors and the CPLD.
+Finally, after everything was properly connected, we had to provide the electronics with power.
+Once we had everything connected and powered, we could start testing the assembly. During the testing process, the Arduino was programmed to
+transmit data from the sensors via the serial port so we could monitor the sensor readings in real time.
+This allowed us to fine-tune the triggering thresholds and correct any problems with the Arduino as we found them.
+We powered up the system and used bits of metal to trigger the sensors. Then we simply watched the stoplights run through the cycles. If we noticed
+some discrepancy with the lights, be it an error in the cycle, or a defective LED, we took the appropriate steps to resolve the problem,
+continuing until there were no further errors.
 \subsection{Workflow Diagram}
 \includegraphics[scale=0.75]{DIGITALFLOW.png}
